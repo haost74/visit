@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>SVG Starting</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <script src="http://d3js.org/d3.v3.js"></script>
-   <script type="text/javascript" src="headerRender.js"></script>
-   <script type="text/javascript">
-   var bodyMain = d3.select("body");
-     getSize(bodyMain);
-   </script>
-  </head>
-  <body>
-    <header>
-      <!--<img src="/img/logo.png" style="width:50px" alt="Лого SVG">-->
-      <svg class="mainSvg"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,8 +9,10 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="50mm"
+   viewBox="0 0 210 297"
    version="1.1"
-   viewBox="0 0 210 40"
    id="svg68"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="header.svg">
@@ -113,7 +102,7 @@
              height="53.53809"
              width="200.01021"
              id="rect125" /></flowRegion><flowPara
-           id="flowPara127">Start</flowPara></flowRoot></g>
+           id="flowPara127">    Start</flowPara></flowRoot>    </g>
     <g
        id="layer1-8-0"
        inkscape:label="Layer 1"
@@ -180,7 +169,3 @@
            id="flowPara127-3">    Start</flowPara></flowRoot>    </g>
   </g>
 </svg>
-    </header>
-    {{{body}}}
-  </body>
-</html>
