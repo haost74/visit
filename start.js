@@ -1,4 +1,5 @@
 var express = require('express');
+var fortune = require('./lib/fortune.js');
 var app = express();
 
 var handlebars = require('express-handlebars')
@@ -15,9 +16,7 @@ res.render('home');
 });
 
 app.get('/about', function(req, res){
-var randomFortune =
-fortunes[Math.floor(Math.random() * fortunes.length)];
-res.render('about', { fortune: randomFortune });
+res.render('about', { fortune: fortune.getFortune() });
 });
 
 // Обобщенный обработчик 404 (промежуточное ПО)
@@ -31,14 +30,6 @@ console.error(err.stack);
 res.status(500);
 res.render('500');
 });
-
-var fortunes = [
-"Победи свои страхи, или они победят тебя.",
-"Рекам нужны истоки.",
-"Не бойся неведомого.",
-"Тебя ждет приятный сюрприз.",
-"Будь проще везде, где только можно.",
-];
 
 app.listen(app.get('port'), function(){
 console.log( 'Express запущен на http://localhost:' +
