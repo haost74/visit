@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
 res.render('home');
 });
 
+app.get('/page', function(req, res){
+  res.render('page');
+});
+
 app.get('/about', function(req, res){
 res.render('about', { fortune: fortune.getFortune() });
 });
