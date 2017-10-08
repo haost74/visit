@@ -3,9 +3,10 @@ function getSize(element){
   var w = window.innerWidth;
   var h = window.innerHeight;
 
-  var ell = element
+  var svg = element
   .select("object")
-  .select("svg");
+  .select(".mainSvg");
 
-  ell.attr("width", w);
+  svg.attr("width", w)
+  .attr("height", 40);
 };

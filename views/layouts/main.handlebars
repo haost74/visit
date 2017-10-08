@@ -5,83 +5,15 @@
     <title>SVG Starting</title>
    <link rel="stylesheet" type="text/css" href="style.css">
    <script src="http://d3js.org/d3.v3.js"></script>
+   <script type="text/javascript" src="dravingSVG.js"></script>
    <script type="text/javascript" src="headerRender.js"></script>
-   <script type="text/javascript">
-   var bodyMain = d3.select("body");
-     getSize(bodyMain);
-   </script>
   </head>
-  <body>
+  <body class="main">
     <header>
       <!--<img src="/img/logo.png" style="width:50px" alt="Лого SVG">-->
-      <svg class="mainSvg"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   viewBox="0 0 210 40"
-   id="svg68"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="header.svg">
-  <defs
-     id="defs62" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="385.83042"
-     inkscape:cy="1025.5175"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:measure-start="617.708,1023.28"
-     inkscape:measure-end="617.708,1024.8"
-     inkscape:window-width="1858"
-     inkscape:window-height="1057"
-     inkscape:window-x="1016"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata65">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:#e3dedb;stroke-width:0.26458332"
-       id="rect70"
-       width="202.21725"
-       height="30.616072"
-       x="4.1577382"
-       y="5.5803566"
-       ry="3.0067778" />
-    <g
-       id="g84"
-       transform="matrix(0.03527778,0,0,-0.03527778,8.997897,29.110916)"
-       style="fill:#000000;stroke:none">
-      <path
-         id="path82"
-         d="M 155,456 C 95,428 68,400 41,340 5,261 22,157 83,91 116,55 198,20 250,20 c 52,0 134,35 167,71 34,37 63,110 63,159 0,52 -35,134 -71,167 -37,34 -110,63 -159,63 -27,0 -65,-10 -95,-24 z m 165,-9 c 27,-9 35,-17 35,-37 0,-21 -6,-26 -31,-28 -39,-4 -83,-47 -66,-64 9,-9 7,-17 -10,-35 -12,-13 -28,-23 -36,-23 -10,0 -13,-8 -10,-25 3,-14 2,-25 -2,-25 -14,0 -30,-52 -24,-76 6,-24 31,-36 68,-31 15,1 21,-6 27,-31 6,-30 5,-32 -20,-32 -117,0 -220,110 -209,223 2,26 7,32 25,30 18,-2 22,4 28,39 4,22 10,36 14,30 9,-15 80,9 92,31 11,18 2,47 -15,48 -6,0 -2,4 9,9 28,12 84,11 125,-3 z M 450,311 c 16,-58 13,-69 -21,-76 -27,-6 -30,-10 -24,-36 9,-39 -13,-38 -28,1 -7,18 -19,30 -29,30 -27,0 -22,17 7,24 14,4 25,10 25,15 0,13 -32,23 -39,13 -11,-17 -51,-34 -51,-21 0,6 -7,8 -16,5 -8,-3 -12,-2 -9,4 3,6 15,10 25,10 21,0 45,34 35,50 -10,16 -28,11 -21,-6 4,-10 1,-14 -6,-12 -19,7 -16,29 5,42 13,8 20,8 27,-3 7,-12 12,-11 29,10 12,14 18,32 15,44 -9,36 65,-56 76,-94 z M 322,197 c 32,1 38,-3 49,-29 11,-26 10,-35 -6,-64 -10,-19 -24,-39 -32,-45 -19,-17 -43,-3 -43,25 0,29 -31,50 -59,41 -24,-7 -44,18 -36,45 8,26 42,41 70,32 11,-4 37,-6 57,-5 z"
-         inkscape:connector-curvature="0" />
-    </g>
+      <object>
+      <svg class="mainSvg" wigth="350" height="60">
+  <g>
     <g
        id="layer1-8"
        inkscape:label="Layer 1"
@@ -94,26 +26,18 @@
          width="69.757347"
          id="rect104"
          style="fill:#333333;stroke-width:0.26458332" />
-      <rect
+      <rect class="rect_1"
          ry="3.0067778"
          y="21.445122"
          x="51.182114"
          height="29.399649"
          width="69.757347"
          id="rect104-6"
-         style="fill:#ac9393;stroke-width:0.26458332" />
-      <flowRoot
-         transform="matrix(0.30239923,0,0,0.32650279,-13.023946,-6.1443601)"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot121"
-         xml:space="preserve"><flowRegion
-           id="flowRegion123"><rect
-             y="105.29607"
-             x="224.25386"
-             height="53.53809"
-             width="200.01021"
-             id="rect125" /></flowRegion><flowPara
-           id="flowPara127">Start</flowPara></flowRoot></g>
+         style="fill:#ac9393;stroke-width:0.26458332">
+       </rect>
+       <text x="62" y="43" ry="3.0067778"
+         y="21.445122" >HOME</text>
+      </g>
     <g
        id="layer1-8-0"
        inkscape:label="Layer 1"
@@ -133,19 +57,7 @@
          height="29.399649"
          width="69.757347"
          id="rect104-6-9"
-         style="fill:#ac9393;stroke-width:0.26458332" />
-      <flowRoot
-         transform="matrix(0.30239923,0,0,0.32650279,-13.023946,-6.1443601)"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot121-9"
-         xml:space="preserve"><flowRegion
-           id="flowRegion123-9"><rect
-             y="105.29607"
-             x="224.25386"
-             height="53.53809"
-             width="200.01021"
-             id="rect125-6" /></flowRegion><flowPara
-           id="flowPara127-1">    Start</flowPara></flowRoot>    </g>
+         style="fill:#ac9393;stroke-width:0.26458332" />   </g>
     <g
        id="layer1-8-2"
        inkscape:label="Layer 1"
@@ -166,21 +78,17 @@
          width="69.757347"
          id="rect104-6-0"
          style="fill:#ac9393;stroke-width:0.26458332" />
-      <flowRoot
-         transform="matrix(0.30239923,0,0,0.32650279,-13.023946,-6.1443601)"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot121-8"
-         xml:space="preserve"><flowRegion
-           id="flowRegion123-0"><rect
-             y="105.29607"
-             x="224.25386"
-             height="53.53809"
-             width="200.01021"
-             id="rect125-63" /></flowRegion><flowPara
-           id="flowPara127-3">    Start</flowPara></flowRoot>    </g>
+      </g>
   </g>
 </svg>
+  </object>
     </header>
     {{{body}}}
+
+    <script type="text/javascript">
+    var bodyMain = d3.select("body.main");
+      getSize(bodyMain);
+    </script>
+
   </body>
 </html>
