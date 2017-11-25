@@ -76,3 +76,9 @@ object{
     width: 100vw;
   }
 }
+
+plaintetx{
+  width: 100vw;
+  height: 100vh;
+background: red;
+}
